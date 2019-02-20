@@ -1,0 +1,96 @@
+/* Custom Stylesheet */
+
+nav{
+  position: fixed;
+  z-index: 1;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+.navlink{
+  width: 33.33%;
+}
+
+.navlink a {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+}
+
+.fa-linkedin{
+  font-size: 4rem;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+.linkedinDiv{
+  position: absolute;
+}
+
+.header{
+  text-shadow: 2px 2px black;
+}
+
+.introContainer{
+  width: 100%;
+}
+
+.introHeader{
+  margin-bottom: 0;
+}
+
+.icon-block {
+  padding: 25px 15px;
+}
+
+.image-block{
+  padding: 6% 0;
+}
+
+p {
+  line-height: 2rem;
+  font-family: 'Bree Serif', serif;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.sidenav{
+  height: 45%;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 20%;
+  }
+}
+
+
+
+footer.page-footer {
+  margin: 0;
+}
