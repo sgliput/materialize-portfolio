@@ -2,7 +2,7 @@
 
 nav{
   position: fixed;
-  z-index: 1;
+  z-index: 4;
 }
 
 nav ul a,
@@ -19,7 +19,7 @@ nav .brand-logo {
   font-size: 1.5rem;
 }
 
-.fa-linkedin{
+.linkedinFixed{
   font-size: 4rem;
   position: fixed;
   bottom: 5px;
@@ -34,7 +34,7 @@ nav .brand-logo {
   text-shadow: 2px 2px black;
 }
 
-.introContainer{
+.introContainer, .projectContainer{
   width: 100%;
 }
 
@@ -73,6 +73,110 @@ p {
     width: 100%;
   }
 
+.card{
+  position: relative;
+  border-radius: 10px !important;
+  background-color: blanchedalmond;
+}
+
+.card-content{
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  margin: 0 auto;
+}
+
+.card-reveal{
+  z-index: 1 !important;
+  background-color: tan !important;
+  padding: 24px 24px 5px 24px !important;
+}
+
+.card-title{
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card-image{
+  max-width: 60% !important;
+  
+}
+
+.card-image img{
+  width: 100% !important;
+}
+
+.projectName{
+  margin-top: -20px;
+  margin-bottom: -20px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  display: none;
+  text-shadow: 2px 2px white;
+}
+
+.projectInfo{
+  margin-top: 8%;
+  text-align: center;
+}
+
+.close{
+  margin-top: -2%;
+}
+
+.link{
+  margin-top: 10%;
+  margin-left: 14%;
+  font-size: 2.3rem;
+}
+
+.github1{
+  display: block !important;
+  font-size: 2rem;
+  margin-top: -27%;
+  margin-left: 68%;
+}
+
+.link2{
+  position: absolute;
+  left: 25%;
+  bottom: 5%;
+  font-size: 3.3rem;
+}
+
+
+
+.github2{
+  display: block !important;
+  position: absolute;
+  font-size: 2.1rem;
+  bottom: 11%;
+  left: 68%;
+}
+
+#booksAndCranniesCard, #clickyCard, #triviaTroveCard, #friendFinderCard, #trainTimeCard, #triviaGameCard, #hangmanCard{
+  margin-top: -130px;
+}
+
+#newsHubCard, #nerdBurgerCard, #medsearchCard, #giftasticCard, #rpgCard{
+  margin-top: -60px;
+}
+
+.contact, .contactLabel{
+  text-align: center;
+}
+
+.github3{
+  font-size: 3rem;
+}
+
+.linkedin{
+  font-size: 3rem;
+}
+
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -86,6 +190,9 @@ p {
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 20%;
+  }
+  .card{
+    margin-bottom: 170px;
   }
 }
 
