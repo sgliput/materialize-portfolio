@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Nunito|Bree+Serif" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
 </head>
@@ -19,37 +20,37 @@
 
   <nav class="white" role="navigation">
     <div class="nav-wrapper">
-      <ul class="hide-on-small-and-down">
+      <ul>
         <li class="navlink center-align yellow waves-effect waves-orange">
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
         <li class="navlink center-align deep-orange lighten-1 waves-effect waves-yellow">
-          <a href="#">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li class="navlink center-align deep-orange accent-1 waves-effect waves-red">
-          <a href="#">Contact</a>
+          <a href="#contacts">Contact</a>
         </li>
 
       </ul>
 
-      <ul id="nav-mobile" class="sidenav">
+      <!-- <ul id="nav-mobile" class="sidenav">
         <li class="yellow">
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
 
         <li class="deep-orange lighten-1">
-          <a href="#">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
 
         <li class="deep-orange accent-1">
-          <a href="#">Contact</a>
+          <a href="#contacts">Contact</a>
         </li>
 
       </ul>
 
       <a href="#" data-target="nav-mobile" class="sidenav-trigger hide-on-med-and-up">
         <i class="material-icons">menu</i>
-      </a>
+      </a> -->
     </div>
   </nav>
 
@@ -72,15 +73,14 @@
     </div>
   </div>
 
-
-  <div class="container introContainer">
+  <div class="container introContainer" id="about">
     <div class="section">
 
-      <div class="row introHeader">
-        <h5 class="center-align">My name is Sam Liput, friend, poet, and web developer.</h5>
+      <div class="row">
+        <h5 class="center-align introHeader">My name is Sam Liput, friend, poet, and web developer.</h5>
       </div>
       <div class="row">
-        <div class="col s12 m4">
+        <div class="col s12 m4" id="about1">
           <div class="icon-block">
 
             <p class="light">After some years in the customer service world, I decided to broach the IT industry and make a new career out
@@ -91,7 +91,7 @@
           </div>
         </div>
 
-        <div class="col s12 m4">
+        <div class="col s12 m4" id="aboutPhoto">
 
           <div class="image-block">
             <img class="samPhoto" src="images/sam-photo.jpg" width="100%" height="320px" />
@@ -99,7 +99,7 @@
 
         </div>
 
-        <div class="col s12 m4">
+        <div class="col s12 m4" id="about2">
           <div class="icon-block">
             <p class="light">Trained in HTML5, CSS3, JavaScript, JQuery, Bootstrap, Node.js, Express, MySQL, MongoDB, and React.js, I have
               endeavored to foster the skills needed to succeed in this constantly evolving industry.</p>
@@ -114,7 +114,7 @@
   </div>
 
 
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper" id="icebergPhoto">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -127,7 +127,7 @@
     </div>
   </div>
 
-  <div class="container projectContainer">
+  <div class="container projectContainer" id="projects">
     <div class="section">
 
       <div class="row">
@@ -139,7 +139,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col s12 m4">
+        <div class="col s12 m4" id="recipeBookCard">
           <h3 class="projectName center-text" id="recipeBook">Recipe Book</h3>
           <div class="card horizontal">
             <div class="card-image waves-effect waves-block">
@@ -147,17 +147,18 @@
             </div>
 
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4" data-name="recipeBook">
+              <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Show Description"
+                data-name="recipeBook">
                 Recipe Book
                 <br>
                 <i class="material-icons activator">more_vert</i>
               </span>
               <div class="divider"></div>
               <a href="http://recipebook-online.herokuapp.com/" target="blank">
-                <i class="material-icons link">insert_link</i>
+                <i class="material-icons link tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
               </a>
               <a href="https://github.com/sgliput/RecipeBook" target="blank">
-                <i class="fab fa-github github1"></i>
+                <i class="fab fa-github github1 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
               </a>
             </div>
             <div class="card-reveal">
@@ -165,14 +166,18 @@
 
                 <i class="material-icons right close" data-name="recipeBook">close</i>
               </span>
-              <p class="projectInfo">Full-stack recipe-sharing app built with React, Express server, MongoDB database, Bootstrap styling, Material-UI components, and Chart.js</p>
+              <p class="projectInfo">Full-stack recipe-sharing app built with React, Express server, MongoDB database, Bootstrap styling, Material-UI
+                components, and Chart.js</p>
 
-                <a href="http://recipebook-online.herokuapp.com/" class="link2a" target="blank">
-                  <i class="material-icons link2">insert_link</i>
-                </a>
-                <a href="https://github.com/sgliput/RecipeBook" target="blank">
-                  <i class="fab fa-github github2"></i>
-                </a>
+              <a href="http://recipebook-online.herokuapp.com/" class="link2a" target="blank">
+
+                <i class="material-icons link2 tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
+
+              </a>
+
+              <a href="https://github.com/sgliput/RecipeBook" target="blank">
+                <i class="fab fa-github github2 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -187,16 +192,17 @@
             </div>
 
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4" data-name="booksAndCrannies">Books and Crannies
+              <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Show Description"
+                data-name="booksAndCrannies">Books and Crannies
                 <br>
                 <i class="material-icons activator">more_vert</i>
               </span>
               <div class="divider"></div>
               <a href="https://quiet-dawn-14214.herokuapp.com/" target="blank">
-                <i class="material-icons link">insert_link</i>
+                <i class="material-icons link tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
               </a>
               <a href="https://github.com/sgliput/Books-and-Crannies" target="blank">
-                <i class="fab fa-github github1"></i>
+                <i class="fab fa-github github1 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
               </a>
             </div>
             <div class="card-reveal">
@@ -206,10 +212,10 @@
               </span>
               <p class="projectInfo">App built with React and Bootstrap to search for Google Books and save them to a MongoDB database</p>
               <a href="https://quiet-dawn-14214.herokuapp.com/" target="blank">
-                <i class="material-icons link2">insert_link</i>
+                <i class="material-icons link2 tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
               </a>
               <a href="https://github.com/sgliput/Books-and-Crannies" target="blank">
-                <i class="fab fa-github github2"></i>
+                <i class="fab fa-github github2 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
               </a>
             </div>
           </div>
@@ -224,16 +230,17 @@
               </div>
 
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4" data-name="clicky">Tom Hanks Clicky
+                <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Show Description"
+                  data-name="clicky">Tom Hanks Clicky
                   <br>
                   <i class="material-icons activator">more_vert</i>
                 </span>
                 <div class="divider"></div>
                 <a href="https://sgliput.github.io/react-gh-pages/" target="blank">
-                  <i class="material-icons link">insert_link</i>
+                  <i class="material-icons link tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/Clicky-Game" target="blank">
-                  <i class="fab fa-github github1"></i>
+                  <i class="fab fa-github github1 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
               <div class="card-reveal">
@@ -243,10 +250,10 @@
                 </span>
                 <p class="projectInfo">Game app built with React and Bootstrap to challenge your memory and knowledge of Tom Hanks films</p>
                 <a href="https://sgliput.github.io/react-gh-pages/" target="blank">
-                  <i class="material-icons link2">insert_link</i>
+                  <i class="material-icons link2 tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/Clicky-Game" target="blank">
-                  <i class="fab fa-github github2"></i>
+                  <i class="fab fa-github github2 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
             </div>
@@ -262,16 +269,17 @@
               </div>
 
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4" data-name="newsHub">News Hub
+                <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Show Description"
+                  data-name="newsHub">News Hub
                   <br>
                   <i class="material-icons activator">more_vert</i>
                 </span>
                 <div class="divider"></div>
                 <a href="https://radiant-cliffs-10850.herokuapp.com/" target="blank">
-                  <i class="material-icons link">insert_link</i>
+                  <i class="material-icons link tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/NewsHub" target="blank">
-                  <i class="fab fa-github github1"></i>
+                  <i class="fab fa-github github1 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
               <div class="card-reveal">
@@ -279,12 +287,13 @@
 
                   <i class="material-icons right close" data-name="newsHub">close</i>
                 </span>
-                <p class="projectInfo">Full-stack web-scraping app for news articles and comments, using Express server, Handlebars rendering, and a Mongo database with Mongoose</p>
+                <p class="projectInfo">Full-stack web-scraping app for news articles and comments, using Express server, Handlebars rendering, and
+                  a Mongo database with Mongoose</p>
                 <a href="https://radiant-cliffs-10850.herokuapp.com/" target="blank">
-                  <i class="material-icons link2">insert_link</i>
+                  <i class="material-icons link2 tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/NewsHub" target="blank">
-                  <i class="fab fa-github github2"></i>
+                  <i class="fab fa-github github2 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
             </div>
@@ -300,16 +309,17 @@
               </div>
 
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4" data-name="triviaTrove">Trivia Trove
+                <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Show Description"
+                  data-name="triviaTrove">Trivia Trove
                   <br>
                   <i class="material-icons activator">more_vert</i>
                 </span>
                 <div class="divider"></div>
                 <a href="https://intense-brook-89683.herokuapp.com/" target="blank">
-                  <i class="material-icons link">insert_link</i>
+                  <i class="material-icons link tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/triviaTrove" target="blank">
-                  <i class="fab fa-github github1"></i>
+                  <i class="fab fa-github github1 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
               <div class="card-reveal">
@@ -319,10 +329,10 @@
                 </span>
                 <p class="projectInfo">Full-stack trivia game project, using Express server, Handlebars rendering, and a MySQL database with Sequelize</p>
                 <a href="https://intense-brook-89683.herokuapp.com/" target="blank">
-                  <i class="material-icons link2">insert_link</i>
+                  <i class="material-icons link2 tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/triviaTrove" target="blank">
-                  <i class="fab fa-github github2"></i>
+                  <i class="fab fa-github github2 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
             </div>
@@ -338,16 +348,17 @@
               </div>
 
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4" data-name="nerdBurger">Nerd Burger
+                <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Show Description"
+                  data-name="nerdBurger">Nerd Burger
                   <br>
                   <i class="material-icons activator">more_vert</i>
                 </span>
                 <div class="divider"></div>
                 <a href="https://warm-brook-78752.herokuapp.com/" target="blank">
-                  <i class="material-icons link">insert_link</i>
+                  <i class="material-icons link tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/sequelizedBurger" target="blank">
-                  <i class="fab fa-github github1"></i>
+                  <i class="fab fa-github github1 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
               <div class="card-reveal">
@@ -355,12 +366,14 @@
 
                   <i class="material-icons right close" data-name="nerdBurger">close</i>
                 </span>
-                <p class="projectInfo">App for creating and saving burgers, using Express server, Handlebars rendering, and a MySQL database with Sequelize</p>
+                <p class="projectInfo">App for creating and saving burgers, using Express server, Handlebars rendering, and a MySQL database with
+                  Sequelize
+                </p>
                 <a href="https://warm-brook-78752.herokuapp.com/" target="blank">
-                  <i class="material-icons link2">insert_link</i>
+                  <i class="material-icons link2 tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/sequelizedBurger" target="blank">
-                  <i class="fab fa-github github2"></i>
+                  <i class="fab fa-github github2 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
             </div>
@@ -376,16 +389,17 @@
               </div>
 
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4" data-name="friendFinder">Friend Finder
+                <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Show Description"
+                  data-name="friendFinder">Friend Finder
                   <br>
                   <i class="material-icons activator">more_vert</i>
                 </span>
                 <div class="divider"></div>
                 <a href="https://mysterious-anchorage-55055.herokuapp.com/" target="blank">
-                  <i class="material-icons link">insert_link</i>
+                  <i class="material-icons link tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/FriendFinder" target="blank">
-                  <i class="fab fa-github github1"></i>
+                  <i class="fab fa-github github1 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
               <div class="card-reveal">
@@ -395,10 +409,10 @@
                 </span>
                 <p class="projectInfo">Survey app for matching you to other users based on survey input, using Express server</p>
                 <a href="https://mysterious-anchorage-55055.herokuapp.com/" target="blank">
-                  <i class="material-icons link2">insert_link</i>
+                  <i class="material-icons link2 tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/FriendFinder" target="blank">
-                  <i class="fab fa-github github2"></i>
+                  <i class="fab fa-github github2 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
             </div>
@@ -414,16 +428,17 @@
               </div>
 
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4" data-name="medsearch">MedSearch
+                <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Show Description"
+                  data-name="medsearch">MedSearch
                   <br>
                   <i class="material-icons activator">more_vert</i>
                 </span>
                 <div class="divider"></div>
                 <a href="https://sgliput.github.io/MedSearch/" target="blank">
-                  <i class="material-icons link">insert_link</i>
+                  <i class="material-icons link tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/MedSearch" target="blank">
-                  <i class="fab fa-github github1"></i>
+                  <i class="fab fa-github github1 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
               <div class="card-reveal">
@@ -431,12 +446,13 @@
 
                   <i class="material-icons right close" data-name="medsearch">close</i>
                 </span>
-                <p class="projectInfo">A search tool for finding doctors based on input criteria, using Firebase authentication and the BetterDoctor and Here Maps APIs</p>
+                <p class="projectInfo">A search tool for finding doctors based on input criteria, using Firebase authentication and the BetterDoctor
+                  and Here Maps APIs</p>
                 <a href="https://sgliput.github.io/MedSearch/" target="blank">
-                  <i class="material-icons link2">insert_link</i>
+                  <i class="material-icons link2 tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/MedSearch" target="blank">
-                  <i class="fab fa-github github2"></i>
+                  <i class="fab fa-github github2 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
             </div>
@@ -452,16 +468,17 @@
               </div>
 
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4" data-name="trainTime">Train Scheduler
+                <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Show Description"
+                  data-name="trainTime">Train Scheduler
                   <br>
                   <i class="material-icons activator">more_vert</i>
                 </span>
                 <div class="divider"></div>
                 <a href="https://sgliput.github.io/TrainTime/" target="blank">
-                  <i class="material-icons link">insert_link</i>
+                  <i class="material-icons link tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/TrainTime" target="blank">
-                  <i class="fab fa-github github1"></i>
+                  <i class="fab fa-github github1 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
               <div class="card-reveal">
@@ -471,10 +488,10 @@
                 </span>
                 <p class="projectInfo">App for submitting train schedule data and displaying it as a dynamic table using Firebase and Moment.js</p>
                 <a href="https://sgliput.github.io/TrainTime/" target="blank">
-                  <i class="material-icons link2">insert_link</i>
+                  <i class="material-icons link2 tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/TrainTime" target="blank">
-                  <i class="fab fa-github github2"></i>
+                  <i class="fab fa-github github2 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
             </div>
@@ -490,16 +507,17 @@
               </div>
 
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4" data-name="giftastic">Gif Project
+                <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Show Description"
+                  data-name="giftastic">Gif Project
                   <br>
                   <i class="material-icons activator">more_vert</i>
                 </span>
                 <div class="divider"></div>
                 <a href="https://sgliput.github.io/Giftastic/" target="blank">
-                  <i class="material-icons link">insert_link</i>
+                  <i class="material-icons link tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/Giftastic" target="blank">
-                  <i class="fab fa-github github1"></i>
+                  <i class="fab fa-github github1 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
               <div class="card-reveal">
@@ -509,10 +527,10 @@
                 </span>
                 <p class="projectInfo">A GIF generator for displaying and favoriting animation GIFs from the Giphy API</p>
                 <a href="https://sgliput.github.io/Giftastic/" target="blank">
-                  <i class="material-icons link2">insert_link</i>
+                  <i class="material-icons link2 tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/Giftastic" target="blank">
-                  <i class="fab fa-github github2"></i>
+                  <i class="fab fa-github github2 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
             </div>
@@ -528,16 +546,17 @@
               </div>
 
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4" data-name="triviaGame">Trivia Game
+                <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Show Description"
+                  data-name="triviaGame">Trivia Game
                   <br>
                   <i class="material-icons activator">more_vert</i>
                 </span>
                 <div class="divider"></div>
                 <a href="https://sgliput.github.io/TriviaGame/" target="blank">
-                  <i class="material-icons link">insert_link</i>
+                  <i class="material-icons link tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/TriviaGame" target="blank">
-                  <i class="fab fa-github github1"></i>
+                  <i class="fab fa-github github1 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
               <div class="card-reveal">
@@ -547,10 +566,10 @@
                 </span>
                 <p class="projectInfo">A two-level trivia game about the wonderful world of fruit</p>
                 <a href="https://sgliput.github.io/TriviaGame/" target="blank">
-                  <i class="material-icons link2">insert_link</i>
+                  <i class="material-icons link2 tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/TriviaGame" target="blank">
-                  <i class="fab fa-github github2"></i>
+                  <i class="fab fa-github github2 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
             </div>
@@ -566,16 +585,17 @@
               </div>
 
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4" data-name="rpg">Avengers RPG
+                <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Show Description"
+                  data-name="rpg">Avengers RPG
                   <br>
                   <i class="material-icons activator">more_vert</i>
                 </span>
                 <div class="divider"></div>
                 <a href="https://sgliput.github.io/rpg-game/" target="blank">
-                  <i class="material-icons link">insert_link</i>
+                  <i class="material-icons link tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/rpg-game" target="blank">
-                  <i class="fab fa-github github1"></i>
+                  <i class="fab fa-github github1 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
               <div class="card-reveal">
@@ -585,10 +605,10 @@
                 </span>
                 <p class="projectInfo">A Marvel-themed role-playing game</p>
                 <a href="https://sgliput.github.io/rpg-game/" target="blank">
-                  <i class="material-icons link2">insert_link</i>
+                  <i class="material-icons link2 tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/rpg-game" target="blank">
-                  <i class="fab fa-github github2"></i>
+                  <i class="fab fa-github github2 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
             </div>
@@ -604,16 +624,17 @@
               </div>
 
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4" data-name="hangman">Sci-Fi Hangman
+                <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Show Description"
+                  data-name="hangman">Sci-Fi Hangman
                   <br>
                   <i class="material-icons activator">more_vert</i>
                 </span>
                 <div class="divider"></div>
                 <a href="https://sgliput.github.io/Word-Guess-Game/" target="blank">
-                  <i class="material-icons link">insert_link</i>
+                  <i class="material-icons link tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/Word-Guess-Game" target="blank">
-                  <i class="fab fa-github github1"></i>
+                  <i class="fab fa-github github1 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
               <div class="card-reveal">
@@ -623,10 +644,10 @@
                 </span>
                 <p class="projectInfo">A word-guess game using randomly chosen sci-fi films</p>
                 <a href="https://sgliput.github.io/Word-Guess-Game/" target="blank">
-                  <i class="material-icons link2">insert_link</i>
+                  <i class="material-icons link2 tooltipped" data-position="bottom" data-tooltip="Deployed Site">insert_link</i>
                 </a>
                 <a href="https://github.com/sgliput/Word-Guess-Game" target="blank">
-                  <i class="fab fa-github github2"></i>
+                  <i class="fab fa-github github2 tooltipped" data-position="bottom" data-tooltip="GitHub Link"></i>
                 </a>
               </div>
             </div>
@@ -635,9 +656,9 @@
 
       </div>
     </div>
+</div>
 
-
-    <div class="parallax-container valign-wrapper">
+    <div class="parallax-container valign-wrapper" id="coderain">
       <div class="section no-pad-bot">
         <div class="container">
           <div class="row center">
@@ -650,59 +671,64 @@
       </div>
     </div>
 
-
-
-
-    <div class="container">
+    <div class="container" id="contacts">
       <div class="row">
-          <div class="col l6 s12">
-        <h4 class="contactLabel">Phone Number</h4>
-        <p class="contact">(813) 758-4385</p>
+        <div class="col l6 m6 s12">
+          <h4 class="contactLabel">Phone Number</h4>
+          <p class="contact contactPhone">
+            <a href="tel:813-758-4385">(813) 758-4385</a>
+          </p>
         </div>
-        <div class="col l6 s12">
-        <h4 class="contactLabel">E-Mail</h4>
-        <p class="contact"><a href="mailto:sgliput@comcast.net">sgliput@comcast.net</a></p>
+        <div class="col l6 m6 s12">
+          <h4 class="contactLabel">E-Mail</h4>
+          <p class="contact contactEmail">
+            <a href="mailto:sgliput@comcast.net">sgliput@comcast.net</a>
+          </p>
         </div>
-        <div class="col l4">
-            <i class="fab fa-github github3 contact"></i>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col l4 contactDiv">
+          <a href="https://github.com/sgliput" target="blank">
+            <i class="fab fa-github github3 contact tooltipped" data-position="bottom" data-tooltip="GitHub"></i>
+          </a>
         </div>
-        <div class="col l4">
-            <a href="https://www.linkedin.com/in/samuel-liput-b04b49166/" target="blank">
-              <i class="blue-text fab fa-linkedin linkedin contact"></i>
-              </a>
+        <div class="col l4 contactDiv">
+          <a href="https://www.linkedin.com/in/samuel-liput-b04b49166/" target="blank">
+            <i class="blue-text fab fa-linkedin linkedin contact tooltipped" data-position="bottom" data-tooltip="LinkedIn Profile"></i>
+          </a>
         </div>
-        <div class="col l4">
-
-          
-            <a href="Final Samuel Liput Resume.pdf">
-                <h5 class="contact">My Resum&eacute;</h5>
-            </a>
+        <div class="col l4 contactDiv">
+          <a href="Final Samuel Liput Resume.pdf" target="blank">
+            <h5 class="contact resume">My Resum&eacute;</h5>
+          </a>
 
         </div>
       </div>
     </div>
-    <footer class="page-footer teal">
+    <footer class="page-footer deep-orange">
       <div class="footer-copyright">
-        <div class="container">
-          Made by
-          <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-        </div>
+        <p class="footer-text">Made with Materialize by Sam Liput</p>
       </div>
     </footer>
     <div class="linkedinDiv">
       <a href="https://www.linkedin.com/in/samuel-liput-b04b49166/" target="blank">
-      <i class="blue-text fab fa-linkedin linkedinFixed"></i>
+        <i class="blue-text fab fa-linkedin linkedinFixed tooltipped" data-position="top" data-tooltip="LinkedIn Profile"></i>
       </a>
     </div>
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
-
+    <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
 
     <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.tooltipped');
+        var instances = M.Tooltip.init(elems, options);
+      });
 
       const projects = document.querySelectorAll(".activator");
       const closers = document.querySelectorAll(".close");
@@ -712,7 +738,7 @@
         const projectNameElem = document.getElementById(projectName);
         projectNameElem.style.zIndex = 2;
         $(`#${projectName}`).slideDown(800);
-        
+
         // projectNameElem.style.display = "block";
       }
       function hideName() {

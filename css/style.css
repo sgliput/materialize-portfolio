@@ -24,6 +24,7 @@ nav .brand-logo {
   position: fixed;
   bottom: 5px;
   right: 5px;
+  z-index: 4;
 }
 
 .linkedinDiv{
@@ -77,6 +78,7 @@ p {
   position: relative;
   border-radius: 10px !important;
   background-color: blanchedalmond;
+  height: 200px;
 }
 
 .card-content{
@@ -90,6 +92,7 @@ p {
   z-index: 1 !important;
   background-color: tan !important;
   padding: 24px 24px 5px 24px !important;
+  overflow-y: hidden !important;
 }
 
 .card-title{
@@ -100,11 +103,11 @@ p {
 
 .card-image{
   max-width: 60% !important;
-  
 }
 
 .card-image img{
   width: 100% !important;
+  height: 100%;
 }
 
 .projectName{
@@ -118,7 +121,7 @@ p {
 }
 
 .projectInfo{
-  margin-top: 8%;
+  margin-top: 10%;
   text-align: center;
 }
 
@@ -142,18 +145,25 @@ p {
 .link2{
   position: absolute;
   left: 25%;
-  bottom: 5%;
+  bottom: 1%;
   font-size: 3.3rem;
 }
-
-
 
 .github2{
   display: block !important;
   position: absolute;
   font-size: 2.1rem;
-  bottom: 11%;
+  bottom: 7%;
   left: 68%;
+}
+
+.tooltip{
+  background:black;
+  color:white;
+  padding:5px;
+  box-shadow:0 0 10px 0 rgba(0, 0, 0, 1);
+  border-radius:10px;
+  opacity:0;
 }
 
 #booksAndCranniesCard, #clickyCard, #triviaTroveCard, #friendFinderCard, #trainTimeCard, #triviaGameCard, #hangmanCard{
@@ -168,12 +178,36 @@ p {
   text-align: center;
 }
 
+.contactDiv{
+  text-align: center;
+  width: 33.3%;
+}
+
+.contactPhone, .contactEmail{
+  font-size: 1.3rem;
+}
+
 .github3{
   font-size: 3rem;
 }
 
 .linkedin{
   font-size: 3rem;
+}
+
+.resume{
+  margin-top: .3rem;
+}
+
+.footer-copyright{
+  padding: 0 !important;
+  height: 40px !important;
+}
+
+.footer-text{
+  position: relative;
+  left: 2%;
+  bottom: 9px;
 }
 
 
@@ -187,14 +221,178 @@ p {
   }
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 900px) and (min-width : 600px) {
+  #recipeBookCard{
+    width: 50%;
+  }
+  #recipeBookCard .card{
+    height: 230px;
+  }
+  #booksAndCranniesCard{
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -140px;
+  }
+  #clickyCard{
+    width: 50%;
+    margin-left: 0;
+    margin-top: -70px;
+  }
+  #newsHubCard{
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -120px;
+  }
+  #newsHubCard .card{
+    height: 230px;
+  }
+  #triviaTroveCard{
+    width: 50%;
+    margin-top: -70px;
+  }
+  #nerdBurgerCard{
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -120px;
+  }
+  #friendFinderCard{
+    width: 50%;
+    margin-left: 0;
+    margin-top: -70px;
+  }
+  #medsearchCard{
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -120px;
+  }
+  #trainTimeCard{
+    width: 50%;
+    margin-left: 0;
+    margin-top: -70px;
+  }
+  #giftasticCard{
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -120px;
+  }
+  #triviaGameCard{
+    width: 50%;
+    margin-left: 0;
+    margin-top: -70px;
+  }
+  #rpgCard{
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -120px;
+  }
+
+  #hangmanCard{
+    width: 50%;
+    margin-left: 0;
+    margin-top: -70px;
+  }
+}
+
+@media only screen and (max-width :1164px) and (min-width : 900px) {
+  #recipeBookCard .card, #newsHubCard .card, #nerdBurgerCard .card, #medsearchCard .card{
+    height: 230px;
+  }
+}
+
+@media only screen and (max-width :1100px) and (min-width : 900px) {
+  .github1{
+    margin-top: -35%;
+  }
+}
+
+@media only screen and (max-width : 700px) and (min-width : 600px) {
+  .github1{
+    margin-top: -35%;
+  }
+}
+
+@media only screen and (max-width : 800px) and (min-width : 600px) {
+    #about1{
+      width: 50%;
+    }
+    #aboutPhoto{
+      width: 50%;
+      float: right;
+    }
+    #about2{
+      width: 100%;
+      margin-top: -5%;
+    }
+    #icebergPhoto{
+      margin-top: -5%;
+    }
+}
+
+@media only screen and (max-width : 599px) {
   #index-banner .section {
     top: 20%;
   }
   .card{
     margin-bottom: 170px;
   }
+  .introHeader{
+    padding: 0 20px;
+    margin-bottom: -5%;
+  }
+  .samPhoto{
+    padding: 0 20px;
+    margin-top: -10%;
+    margin-bottom: -10%;
+  }
+  #recipeBookCard {
+    padding: 0 7%;
+  }
+  #clickyCard {
+    margin-top: -130px;
+    padding: 0 7%;
+  }
+  #booksAndCranniesCard, #triviaTroveCard, #friendFinderCard, #trainTimeCard, #triviaGameCard, #hangmanCard, #newsHubCard, #nerdBurgerCard, #medsearchCard, #giftasticCard, #rpgCard{
+    margin-top: -160px;
+    padding: 0 7%;
+  }
+  .link2{
+    bottom: -1%;
+  }
+  .github2{
+    bottom: 5%;
+  }
+  .projectInfo{
+    margin-top: 5%;
+  }
+  #coderain{
+    margin-top: -25%;
+  }
+  .footer-copyright{
+    min-height: 25px !important;
+  }
 }
+
+@media only screen and (max-width : 540px) {
+  #coderain{
+    margin-top: -30%;
+  }
+}
+
+@media only screen and (max-width : 450px) {
+  #coderain{
+    margin-top: -40%;
+  }
+}
+
+@media only screen and (max-width : 360px) {
+  .github1{
+    margin-top: -32%;
+  }
+  #coderain{
+    margin-top: -50%;
+  }
+}
+
 
 
 
