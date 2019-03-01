@@ -1,30 +1,33 @@
 //For showing tooltips
-document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.tooltipped');
-    var instances = M.Tooltip.init(elems, options);
+if (window.screen.width <= 600) {
+  document.addEventListener('DOMContentLoaded', function () {
+    const elems = document.querySelectorAll('.tooltipped');
+    const instances = M.Tooltip.init($(elems).show());
+    console.log(window.screen.width);
   });
+}
 
-  const projects = document.querySelectorAll(".activator");
-  const closers = document.querySelectorAll(".close");
+const projects = document.querySelectorAll(".activator");
+const closers = document.querySelectorAll(".close");
 
-  function showName() {
-    const projectName = this.dataset.name;
-    const projectNameElem = document.getElementById(projectName);
-    projectNameElem.style.zIndex = 2;
-    $(`#${projectName}`).slideDown(800);
+function showName() {
+  const projectName = this.dataset.name;
+  const projectNameElem = document.getElementById(projectName);
+  projectNameElem.style.zIndex = 2;
+  $(`#${projectName}`).slideDown(800);
 
-    // projectNameElem.style.display = "block";
-  }
-  function hideName() {
-    const projectName = this.dataset.name;
-    const projectNameElem = document.getElementById(projectName);
-    projectNameElem.style.zIndex = -1;
-    $(`#${projectName}`).slideUp(800);
-    // projectNameElem.style.display = "none";
-  }
+  // projectNameElem.style.display = "block";
+}
+function hideName() {
+  const projectName = this.dataset.name;
+  const projectNameElem = document.getElementById(projectName);
+  projectNameElem.style.zIndex = -1;
+  $(`#${projectName}`).slideUp(800);
+  // projectNameElem.style.display = "none";
+}
 
-  projects.forEach(project => project.addEventListener("click", showName));
-  closers.forEach(closer => closer.addEventListener("click", hideName));
+projects.forEach(project => project.addEventListener("click", showName));
+closers.forEach(closer => closer.addEventListener("click", hideName));
 
 
 
